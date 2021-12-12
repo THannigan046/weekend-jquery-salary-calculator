@@ -7,9 +7,95 @@
     <link rel="stylesheet" href="style.css">
     <script src="jquery-3.6.0.min.js"></script>
     <script src="app.js"></script>
-    <title>Document</title>
+    <title>Salary Calculator</title>
 </head>
 <body>
-    <h1>Chungus calculator</h1>
+    <h1>Salary Calculator</h1>
+
+    <h3>Add Employee</h3>
+
+    <!-- add employee form -->
+    <form id="employeeForm">
+    <!-- firstName Input -->
+    <input 
+    id="firstNameInput"
+    type="string"
+    placeholder="First Name"
+    />
+
+    <!-- lastName Input -->
+    <input 
+    id="lastNameInput" 
+    type="string"
+    placeholder="Last Name"
+    />
+
+    <!-- ID Input -->
+    <input 
+    id="idInput" 
+    type="number"
+    placeholder="ID"
+    />
+
+    <!-- title Input -->
+    <input 
+    id="titleInput" 
+    type="string"
+    placeholder="Title"
+    />
+
+    <!-- annual salary Input -->
+    <input 
+    step="any"
+    id="salaryInput" 
+    type="number"
+    placeholder="Annual Salary"
+    />
+
+    <!-- Submit button-->
+    <input  
+    type="submit" 
+    value="Submit" 
+    />
+    </form>
+    <table class="container table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Annual Salary</th>
+            </tr>
+        </thead>
+        <tbody id="employeeList">
+            <tr>
+                <td>Jen</td>
+                <td>Barber</td>
+                <td>4521</td>
+                <td>Big Chungus</td>
+                <td>$2</td>
+                <td>
+                    <button class="deleteBtn">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+                <td>Randy</td>
+                <td>Moss</td>
+                <td>8724</td>
+                <td>Little Chungus</td>
+                <td>$3</td>
+                <td>
+                <button class="deleteBtn">
+                    Delete
+                </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+<footer id="">
+    <h3>Total Monthly: </h3>
+</footer>
 </body>
 </html>
