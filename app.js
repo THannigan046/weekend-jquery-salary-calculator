@@ -2,15 +2,27 @@ console.log('js');
 
 $(document).ready(onReady)
 
-let workplace = []
+let workplace = [];
+
 function onReady() {
     console.log('JQ');
+    //handle new employee form on submit
+    $('#employeeForm').on('submit', onAddEmployee);
 
-$('#employeeForm').on('submit', onAddEmployee)
+    //handle delete employee button
+    //$('#deleteBtn').on('click', onDeleteEmployee)
+    $(document).on('click','.deleteBtn', onDeleteEmployee)
 };
-function onAddEmployee(event){
-    //prevent reload 
 
+function onDeleteEmployee(){
+    console.log('onDeleteEmployee');
+    
+    $(this).parents('tr').remove()
+};
+
+function onAddEmployee(event){
+    
+    //prevent reload 
     event.preventDefault()
     console.log('employee added');
 

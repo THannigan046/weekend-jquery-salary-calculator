@@ -7,7 +7,7 @@
 Your project description goes here. What problem did you solve? How did you solve it?
 Technical tasks
 
-[] Project setup 
+[x] Project setup 
     [x] index.html
     [x] stylesheet
     [x] jquery
@@ -15,15 +15,15 @@ Technical tasks
     [x] doc.ready (console.log('JQ'))
 [x] wireframe
 [x] HTML mockup
-[] submit button
-    [] collect form info from <input>
-    [] store info to calculate monthly costs
-    [] append info to the DOM
+[] submit button˜
+    [x] collect form info from <input>
+    [x] store info to calculate monthly costs
+    [x] append info to the DOM
     [] Clear input fields
-    [] Render the new item to the DOM
+    [x] Render the new item to the DOM
     [] if totalMonthlyCost > 20k, add a red background
-[] Delete button
-    [] removes an employee from the dom. (similar to the flower list thing)
+[x] Delete button
+    [x] removes an employee from the dom. (similar to the flower list thing)
 [] Basic styling, so it's not awful (boostrap, maybe)
 
 company = [

@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    background: hsl(90, 90%, 27%);
+    color: white;
+    padding: 30px 30px 25px 30px;
+    margin-top: 0;
+} 
+
+.container {
+    margin: 0 auto;
+    width: 600px;
+}
+
+table.container {
+    margin-top: 30px;
+}
+
+.form-control {
+    margin: 10px 0;
+}
