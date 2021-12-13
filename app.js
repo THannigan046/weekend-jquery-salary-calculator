@@ -17,7 +17,15 @@ function onReady() {
 function onDeleteEmployee(){
     console.log('onDeleteEmployee');
     
-    $(this).parents('tr').remove()
+
+    //attempted stretch mode, got lazy.
+   /*  const row = $(this).parents('tr');
+    console.log(row.val());
+    row.td();
+
+    
+    const totalMonthly = workplace.reduce((total, employee) => total + (employee.salary / 12), 0);
+    $('#totalMonthlyOutput').text(totalMonthly.toFixed(2)); */
 };
 
 function onAddEmployee(event){
