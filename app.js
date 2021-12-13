@@ -29,7 +29,7 @@ function onDeleteEmployee(){
 function onAddEmployee(event){
     
     //prevent reload 
-    event.preventDefault()
+    event.preventDefault();
     console.log('employee added');
 
     //grab stuff from DOM
@@ -41,7 +41,7 @@ function onAddEmployee(event){
     
     if (! id){
         return
-    }
+    };
     //put it in an object
     let employee = {
         firstName: firstName,
@@ -54,7 +54,8 @@ function onAddEmployee(event){
     workplace.push(employee);
     console.log('workplace', workplace);
     /* for (let employee of workplace){
-        console.log('employee in loop', employee); */
+        console.log('employee in loop', employee); tf did you make us write this loop? 
+        It just breaks and duplicates stuff */
         $('#employeeList').append(`
         <tr>
                 <td>${employee.firstName}</td>
@@ -80,11 +81,15 @@ function onAddEmployee(event){
             $('body').css('background-color', 'red')
         }
     $('#totalMonthlyOutput').text(totalMonthly.toFixed(2));
-    $('#firstNameInput').val('').focus();
+    
+
+    /* $('#firstNameInput').val('').focus();
     $('#lastNameInput').val('').focus();
     $('#idInput').val('').focus();
     $('#titleInput').val('').focus();
-    $('#salaryInput').val('').focus();
+    $('#salaryInput').val('').focus(); */
+
+    $('#employeeForm input').val('');
 }
 
 

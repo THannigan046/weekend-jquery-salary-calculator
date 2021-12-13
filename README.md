@@ -15,13 +15,13 @@ Technical tasks
     [x] doc.ready (console.log('JQ'))
 [x] wireframe
 [x] HTML mockup
-[] submit button˜
+[x] submit button˜
     [x] collect form info from <input>
     [x] store info to calculate monthly costs
     [x] append info to the DOM
     [x] Clear input fields
     [x] Render the new item to the DOM
-    [] if totalMonthlyCost > 20k, add a red background
+    [x] if totalMonthlyCost > 20k, add a red background
 [x] Delete button
     [x] removes an employee from the dom. (similar to the flower list thing)
 [x] Basic styling, so it's not awful (boostrap, maybe)
