@@ -27,12 +27,15 @@ function onAddEmployee(event){
     console.log('employee added');
 
     //grab stuff from DOM
-    let firstName = $('#firstNameInput').val();
-    let lastName = $('#lastNameInput').val();
-    let id = Number($('#idInput').val());
-    let title = $('#titleInput').val();
-    let salary = Number($('#salaryInput').val());
+    const firstName = $('#firstNameInput').val();
+    const lastName = $('#lastNameInput').val();
+    const id = Number($('#idInput').val());
+    const title = $('#titleInput').val();
+    const salary = Number($('#salaryInput').val());
     
+    if (! id){
+        return
+    }
     //put it in an object
     let employee = {
         firstName: firstName,
@@ -40,12 +43,12 @@ function onAddEmployee(event){
         id: id,
         title: title,
         salary: salary
-    }
+    };
     console.log('new employee', employee);
     workplace.push(employee);
     console.log('workplace', workplace);
-    for (let employee of workplace){
-        console.log('employee in loop', employee);
+    /* for (let employee of workplace){
+        console.log('employee in loop', employee); */
         $('#employeeList').append(`
         <tr>
                 <td>${employee.firstName}</td>
@@ -61,8 +64,21 @@ function onAddEmployee(event){
             </tr>
         `
        );
-    }
+
+        
+        
+        
     
+    const totalMonthly = workplace.reduce((total, employee) => total + (employee.salary / 12), 0);
+        if (totalMonthly > 20000){
+            $('body').css('background-color', 'red')
+        }
+    $('#totalMonthlyOutput').text(totalMonthly.toFixed(2));
+    $('#firstNameInput').val('').focus();
+    $('#lastNameInput').val('').focus();
+    $('#idInput').val('').focus();
+    $('#titleInput').val('').focus();
+    $('#salaryInput').val('').focus();
 }
 
 
